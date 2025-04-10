@@ -6,7 +6,6 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
 </head>
 
 <body>
@@ -22,33 +21,42 @@
     <div class="container2">
 
       <div class="typewriter">
-        <h1>Lynnett Spring</h1>
-        <p>Software Engineer</p>
+        <h1>𐙚⋆°.Lynnett Spring</h1>
+        <p>Software Engineer⋆. 𐙚 ̊ </p>
         <div class="stars">★ ✦ ✧ ✦ ★</div>
       </div>
 
     </div>
 
     <div class="container7">
-
       <img src="https://blinkies.cafe/b/display/0256-transparentpastelbubbles.gif" class="image4">
-      <img src="https://blinkies.cafe/b/display/0236-pastelshootingstar.gif" class="image4">
-      <img src="https://blinkies.cafe/b/display/0178-mikuwink2.gif" class="image4">
-      <img src="https://blinkies.cafe/b/display/0134-fluttershy.gif" class="image4">
-      <img src="https://blinkies.cafe/b/display/0071-bi.gif" class="image4">
-      <img src="https://blinkies.cafe/b/display/0026-iheart2.gif" class="image4">
-      <img src="https://blinkies.cafe/b/display/0127-splatoon1.gif" class="image4">
+      <img src="https://blinkies.cafe/b/display/0283-purplelace.gif" class="image4">
       <img src="https://blinkies.cafe/b/display/0183-pastelpinkwings.gif" class="image4">
+      <img src="https://blinkies.cafe/b/display/0145-kirbysquish.gif" class="image4">
+      <img src="https://blinkies.cafe/b/display/0134-fluttershy.gif" class="image4">
+      <img src="https://blinkies.cafe/b/display/0178-mikuwink2.gif" class="image4">
+      <img src="https://blinkies.cafe/b/display/0127-splatoon1.gif" class="image4">
+      <img src="https://blinkies.cafe/b/display/0071-bi.gif" class="image4">
+      <img src="https://blinkies.cafe/b/display/0264-adhd.gif" class="image4">
+      <img src="https://blinkies.cafe/b/display/0238-heartsconnected.gif" class="image4">
+      <img src="https://blinkies.cafe/b/display/0026-iheart2.gif" class="image4">
+      <img src="https://blinkies.cafe/b/display/0206-nyancat.gif" class="image4">
+
     </div>
 
+
+    <div class="Seele-container">
+      <img src="https://i.pinimg.com/736x/9d/da/4d/9dda4d2c40b63f8dbfb17c290e98c23e.jpg" class="Seele-offical-pic">
+    </div>
+
+
   </div>
 
-  <div class="corner-deco">🎀</div>
-  <a href="https://lynnettintro.carrd.co/" target="_blank" class="corner-deco">🎀</a>
-
-
+  <div class="corner-deco">🫧🦋</div>
+  <a href="https://meetlynnett.carrd.co/" target="_blank" class="corner-deco">🫧🦋</a>
 
   </div>
+
 
 
   <div class="container3">
@@ -56,14 +64,17 @@
     <div class="container4">
       <h2>💕About Me</h2>
       <ul>
-        <p>Hi, I'm Lynnett Spring - a student who wants to become a software engineer.
-        <p>I'm slowly learning the language of the web - building little things with HTML, CSS.
+        <p>Hi, I'm Lynnett Spring - a student who wants to become a software engineer and a music producer.
+        <p>I'm slowly learning the language of the web - building little things with HTML, CSS & JS
         <p>In my free time, I play video games and my instrument drums!!
-        <p>I love anime and animales especially rats 🐀🐁
+        <p>I love anime and animals especially rats 🐀🐁
       </ul>
       <img src="https://i.pinimg.com/736x/3c/fb/40/3cfb407bb5e5298c095d5b7abb382200.jpg" class="image3">
+      <img src="https://i.pinimg.com/736x/96/06/32/960632e6b5ffc1950328f74fd3b0b413.jpg" class="container-img-Seele">
       </p>
     </div>
+
+
 
     <div class="container5">
       <h2>🌱 What I'm Learning</h2>
@@ -90,31 +101,87 @@
       <div class="music-player">
         <div class="player-header">
           <h3>Now Playing</h3>
-          <p class="track-name">Fallen Star-The Neighbourhood</p>
+          <p class="track-name">Fallen Star - The Neighbourhood</p>
+
         </div>
-  
-        <audio id="audio-player" controls>
-          <source src="./audio.mp3" type="audio/mp3">
-  
+
+        <audio id="mainMusic" controls>
+          <source src="./☆The Neighbourhood - Fallen Star.mp3" type="audio/mp3">
         </audio>
-  
+
         <div class="player-footer">
-          <button class="prev">⏮</button>
-          <button class="play-pause">⏸</button>
-          <button class="next">⏭</button>
-  
+          <button class="prev">: ̗̀➛</button>
+          <button class="play-pause">ʚ♡ɞ</button>
+          <button class="next">؛ ଓ</button>
+
         </div>
-  
+
       </div>
 
+      <audio controls autoplay loop class="hidden" id="background-music">
+        <source src="./audio-background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
       <div>
-        <img src="https://i.pinimg.com/originals/e0/f9/d8/e0f9d87b1ec4c9885444e64f04525892.gif" alt="">
-        <button onclick="show()">Hide</button>
+        <img id="Seele" src="https://i.pinimg.com/736x/7f/66/aa/7f66aa7f14ba6744d3e818eebc88ba7b.jpg" class="image5">
+        <button class="toggle-button" onclick="toggle()">Toggle</button>
       </div>
 
 
     </div>
+
+    <div class="bubble-container">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+
+    </div>
+
+    <script>
+
+      for (let i = 0; i < 50; i++) {
+        let bubble = document.createElement("div");
+        bubble.classList.add("bubble");
+
+
+        let size = Math.random() * 30 + 10;
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+
+
+        bubble.style.left = `${Math.random() * 100}vw`;
+
+
+        let duration = Math.random() * 5 + 5;
+        bubble.style.animationDuration = `${duration}s`;
+
+
+        bubble.style.opacity = Math.random() * 0.5 + 0.3;
+
+
+        document.querySelector(".bubble-container").appendChild(bubble);
+      }
+
+    </script>
+
+    <div class="container-social-medias">
+      <a href="https://www.tiktok.com/@ox.lyn.nstar" target="_blank">
+        <img src="https://i.pinimg.com/736x/29/d4/84/29d484488251b709515aed721a85a03e.jpg" class="social-media-img" />
+      </a>
+      <a href="https://www.instagram.com/galhevelozva_/" target="_blank">
+        <img src="https://i.pinimg.com/736x/61/4a/2b/614a2bf36d27449b7c6fbd84621272f9.jpg" class="social-media-img"
+          alt="instagram" />
+      </a>
+      <a href="https://open.spotify.com/user/214n373rkn4k5ew23y2qxll4a?si=150e62275b9d41c4" target="_blank">
+        <img src="https://i.pinimg.com/736x/5c/e6/75/5ce6752ef475c8dcadc5e90f24d74294.jpg" class="social-media-img">
+      </a>
+    </div>
+
   </div>
+
+
+  <script src="index.js"></script>
 </body>
 
 </html>

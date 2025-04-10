@@ -26,7 +26,7 @@ body {
 
 .stars {
     font-size: 20px;
-    color: #b3bce5;
+    color: #FFD700;
     margin-top: 8px;
     animation: floatStars 3s ease-in-out infinite;
 }
@@ -101,8 +101,9 @@ body {
     position: relative;
     width: 325px;
     height: 325px;
+    border: #7f9bce;
     /*background-color: rgba(173, 59, 59, 0);*/
-    border-radius: 25%;
+    border-radius: 55px;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 50px;
@@ -114,6 +115,7 @@ body {
     display: block;
     object-fit: fill;
     display: block;
+    border-radius: 50px;
 }
 
 .image2 {
@@ -133,8 +135,8 @@ body {
     height: 100%px;
     background-color: rgb(255, 255, 255);
     padding: 5px;
-    border: 5px solid #682a81b0;
-    border-radius: 10%;
+    border: 5px solid #2a4499b7;
+    border-radius: 30px;
     font-size: 25;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -170,7 +172,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items:self-start;
+    align-items: self-start;
     width: 100%;
     /*height: 100%;*/
     /*background: linear-gradient(to top, #bd6ae0, #d184f1);*/
@@ -179,24 +181,26 @@ body {
 
 .container4 {
     width: 325px;
-    height: 690px;
+    height: 715px;
     background-color: rgb(255, 255, 255);
     border: 5px solid #682a81b0;
+    border-radius: 30px;
     margin-left: 50px;
     margin-top: 50px;
 }
 
-.image3{   
+.image3 {
     width: 325px;
     height: 50px;
     object-fit: fill;
 }
 
-.container5 { 
+.container5 {
     width: 500px;
     height: 300px;
     background-color: rgb(255, 255, 255);
     border: 5px solid #682a81b0;
+    border-radius: 30px;
     margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -208,7 +212,6 @@ body {
     height: 350px;
     margin-top: 50px;
     margin-bottom: 50px;
-   
 }
 
 .music-player {
@@ -218,7 +221,8 @@ body {
     padding: 30px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top:50px
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .player-header h3 {
@@ -289,15 +293,152 @@ audio {
     object-fit: fill;
 }
 
-.container7{
+.container7 {
     width: 250px;
     height: 200px;
+    margin-right: 125px;
+    margin-left: 20px;
+    margin-top: 75px;
+
+    align-self: flex-start;
+
 }
 
-.container8{
+.container8 {
     display: flex;
     background-color: #000;
     width: 100px;
     height: 100px;
     margin-left: 100px;
+}
+
+.image5 {
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+    margin-top: 30px;
+}
+
+#Seele {
+    width: 350px;
+    transition: opacity 1s ease;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.toggle-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dcb7ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.bubble-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+
+.bubble {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: float-bubble 5s infinite;
+    opacity: 0.8;
+}
+
+
+@keyframes float-bubble {
+    0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    width: 300px;
+}
+
+.Seele-container {
+    position: relative;
+    width: 725px;
+    height: 425px;
+    background: linear-gradient(145deg, #d6e0ff, #f1d6ff);
+    border: 4px solid #2a4499b7;
+    border-radius: 130px;
+    box-shadow: 0 12px 25px rgba(190, 170, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pic-container:hover {
+    transform: scale(1.04);
+    box-shadow: 0 16px 30px rgba(190, 170, 255, 0.45);
+}
+
+.Seele-offical-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: fill;
+}
+
+.container-img-Seele {
+    width: 325px;
+    height: 325px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+}
+
+.container-social-medias {
+    background: #ffe6f0;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    box-shadow: 2px 2px 6px rgba(255, 182, 193, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-button:hover {
+    transform: scale(1.1);
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.social-media-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
