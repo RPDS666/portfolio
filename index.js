@@ -68,5 +68,23 @@ function createBubbles(num) {
 
 createBubbles(50);
 
+  const modal = document.getElementById("lore-modal");
+  const btn = document.getElementById("lore-btn");
+  const close = document.querySelector(".close-btn");
+
+  btn.onclick = () => {
+    modal.style.display = "block";
+  };
+
+  close.onclick = () => {
+    modal.style.display = "none";
+  };
+
+  window.onclick = (e) => {
+    if (e.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+
 
 

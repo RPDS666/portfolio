@@ -383,14 +383,11 @@ audio {
 .Seele-container {
     position: relative;
     width: 725px;
-    height: 425px;
+    height: 330px;
     background: linear-gradient(145deg, #d6e0ff, #f1d6ff);
-    border: 4px solid #2a4499b7;
-    border-radius: 130px;
-    box-shadow: 0 12px 25px rgba(190, 170, 255, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 30px;
+    border: #4e7bcf;
+    margin-left: 95px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -412,19 +409,43 @@ audio {
     height: 325px;
     overflow: hidden;
     position: relative;
-    border-radius: 30px;
+    border-radius: 80px;
 }
 
 .container-social-medias {
-    background: #ffe6f0;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    box-shadow: 2px 2px 6px rgba(255, 182, 193, 0.3);
+    display: flex;
+    border-radius: 50px;
+    width: 610px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 25px;
     cursor: pointer;
     transition: transform 0.2s ease;
+}
+
+.tiktok-container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-right: 25px;
+    border-radius: 25px;
+}
+
+.instagram-container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-right: 25px;
+    border-radius: 25px;
+}
+
+.spotify-container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-right: 25px;
+    border-radius: 25px;
 }
 
 .social-button:hover {
@@ -440,5 +461,130 @@ audio {
 .social-media-img {
     width: 100%;
     height: 100%;
+    object-fit: fill;
+}
+
+/* Flip card styling */
+.flip-card {
+    width: 700px;
+    height: 720px;
+    margin-top: 50px;
+    margin-right: 50px;
+    perspective: 1000px;
+
+}
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
     overflow: hidden;
 }
+
+.flip-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-back {
+    background-color: #f7f0ff;
+    color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.back-content {
+    padding: 1rem;
+}
+
+#lore-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #cdb4f3;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#lore-btn:hover {
+    background-color: #a68edc;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.lore-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #cdb4f3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .lore-link:hover {
+    background-color: #a68edc;
+  }
+  
+  .cinnamoroll-container {
+    overflow: hidden;
+    position: relative;
+    width: 325px;
+    height: 325px;
+    border: #7f9bce;
+    border-radius: 55px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+  
