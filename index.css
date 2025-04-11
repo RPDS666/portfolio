@@ -11,12 +11,12 @@ body {
     height: 100vh;
     color: #333;
     background: linear-gradient(to top, #af89c5, #7f9bce);
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
 }
 
 .center-card h1 {
-    font-size: 24px;
-    margin: 0;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -28,7 +28,7 @@ body {
 .stars {
     font-size: 20px;
     color: #FFD700;
-    margin-top: 8px;
+    margin-top: 6px;
     animation: floatStars 3s ease-in-out infinite;
 }
 
@@ -113,8 +113,9 @@ body {
 .image1 {
     width: 100%;
     height: 100%;
-    display: block;
-    object-fit: fill;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
     display: block;
     border-radius: 50px;
 }
@@ -138,7 +139,7 @@ body {
     padding: 5px;
     border: 5px solid #2a4499b7;
     border-radius: 30px;
-    font-size: 25;
+    font-size: 20;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 55px;
@@ -193,12 +194,14 @@ body {
 .image3 {
     width: 325px;
     height: 50px;
+    display: flex;
+    justify-self: center;
     object-fit: fill;
 }
 
 .container5 {
     width: 500px;
-    height: 300px;
+    height: 715px;
     background-color: rgb(255, 255, 255);
     border: 5px solid #682a81b0;
     border-radius: 30px;
@@ -211,12 +214,12 @@ body {
 .container6 {
     width: 500px;
     height: 350px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    overflow: hidden;
+    margin-top: 25px;
 }
 
 .music-player {
-    width: 450px;
+    width: 440px;
     background-color: #e5d0f0;
     border-radius: 30px;
     padding: 30px;
@@ -317,11 +320,16 @@ audio {
     width: 350px;
     height: 350px;
     border-radius: 10%;
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #Seele {
     width: 350px;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: center;
     transition: opacity 1s ease;
 }
 
@@ -331,6 +339,8 @@ audio {
 }
 
 .toggle-button {
+    display: flex;
+    justify-self: center;
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #dcb7ff;
@@ -410,42 +420,53 @@ audio {
     height: 325px;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
     border-radius: 80px;
 }
 
 .container-social-medias {
     display: flex;
+    justify-content: center;
     border-radius: 50px;
-    width: 610px;
-    height: 100px;
+    width: 400px;
+    height: 270px;
     margin-top: 50px;
-    margin-left: 50px;
     padding: 25px;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
 .tiktok-container {
+    
+    position: relative;
     width: 100px;
     height: 100px;
     overflow: hidden;
+    
     margin-right: 25px;
     border-radius: 25px;
 }
 
 .instagram-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     width: 100px;
     height: 100px;
     overflow: hidden;
+    margin-left: 25px;
     margin-right: 25px;
     border-radius: 25px;
 }
 
 .spotify-container {
+    position: inherit;
     width: 100px;
     height: 100px;
     overflow: hidden;
-    margin-right: 25px;
+    margin-left: 25px;
+    
     border-radius: 25px;
 }
 
@@ -571,26 +592,70 @@ audio {
     border-radius: 10px;
     font-weight: bold;
     transition: background 0.3s;
-  }
+}
 
-  .lore-link:hover {
+.lore-link:hover {
     background-color: #a68edc;
-  }
-  
-  .cinnamoroll-container {
+}
+
+.cinnamoroll-container {
+    display: flex;
+    
+    overflow: hidden;
+    width: 410px;
+    height: 325px;
+}
+
+.kirby-container {
     overflow: hidden;
     position: relative;
     width: 325px;
     height: 325px;
-    border: #7f9bce;
     border-radius: 55px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
+
 }
-  
+
+.cinnamoroll-img2 {
+    width: 250px;
+    height: 250px;
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    border-radius: 250px;
+}
+
+.kibrby-img2 {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    border-radius: 250px;
+}
+
+.cinnamoroll-img1 {
+    width: 500px;
+    height: 150px;
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    border-radius: 50px;
+}
+
+.container777 {
+
+}
+
 /* Responsive Design - Mobile */
 @media screen and (max-width: 768px) {
+
     /* General adjustments */
     body {
         height: auto;
@@ -743,7 +808,8 @@ audio {
     }
 
     /* Make sure all containers have proper padding */
-    .container4, .container5 {
+    .container4,
+    .container5 {
         padding: 15px;
     }
 
@@ -800,4 +866,3 @@ audio {
         padding: 0 10px;
     }
 }
-  
