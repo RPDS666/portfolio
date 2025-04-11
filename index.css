@@ -11,6 +11,7 @@ body {
     height: 100vh;
     color: #333;
     background: linear-gradient(to top, #af89c5, #7f9bce);
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .center-card h1 {
@@ -586,5 +587,217 @@ audio {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 50px;
+}
+  
+/* Responsive Design - Mobile */
+@media screen and (max-width: 768px) {
+    /* General adjustments */
+    body {
+        height: auto;
+    }
+
+    /* Header section adjustments */
+    .flex-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .container1 {
+        width: 250px;
+        height: 250px;
+        margin: 20px auto;
+    }
+
+    .container2 {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .typewriter h1 {
+        font-size: 24px;
+    }
+
+    .typewriter p {
+        font-size: 16px;
+    }
+
+    .container7 {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image4 {
+        width: 45%;
+        margin: 5px;
+        height: auto;
+    }
+
+    .Seele-container {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    /* Main content adjustments */
+    .container3 {
+        flex-direction: column;
+    }
+
+    .container4 {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        padding-bottom: 20px;
+    }
+
+    .image3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .container5 {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        padding-bottom: 20px;
+    }
+
+    .container6 {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .container-img-Seele {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Music player adjustments */
+    .container-music-and-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .music-player {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .image5 {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    /* Social media section */
+    .container-social-medias {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .tiktok-container,
+    .instagram-container,
+    .spotify-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Flip card adjustments */
+    .flip-card {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 1/1.3;
+        margin: 20px auto;
+    }
+
+    /* Bubble adjustments */
+    .bubble {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    /* Corner decoration */
+    .corner-deco {
+        font-size: 30px;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* Additional responsive fixes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Make sure all containers have proper padding */
+    .container4, .container5 {
+        padding: 15px;
+    }
+
+    /* Improve spacing between elements */
+    h2 {
+        margin-top: 15px;
+    }
+
+    /* Fix for audio players */
+    audio {
+        width: 100% !important;
+    }
+
+    /* Fix for the social media containers */
+    .container-social-medias {
+        flex-wrap: wrap;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .container2 {
+        padding: 10px;
+    }
+
+    .typewriter h1 {
+        font-size: 20px;
+    }
+
+    .typewriter p {
+        font-size: 14px;
+    }
+
+    .tiktok-container,
+    .instagram-container,
+    .spotify-container {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .player-footer button {
+        padding: 8px;
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .container4 p,
+    .container5 p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
 }
   
